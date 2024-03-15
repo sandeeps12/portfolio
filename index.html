@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP DEVELOPER</title>
+    <link rel="shortcut icon" href="sandeep.jpg" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #1B263B;
+            color: #E0E1DD;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: #0D1B2A;
+
+        }
+
+        nav .left a {
+            text-decoration: none;
+            color: #E0E1DD;
+        }
+
+        nav .left a:hover {
+
+            color: #ff7d00;
+            text-shadow: 1px 1px 1px #ff7d00;
+            font-size: 1.5rem;
+
+        }
+
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        nav ul li {
+            list-style: none;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #E0E1DD;
+        }
+
+        nav ul li a:hover {
+            color: #415A77;
+            font-size: 1.03rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 60px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            /*background-color: #778DA9;*/
+            font-size: 2rem;
+        }
+
+        .leftSection .button {
+            padding: 20px;
+
+        }
+
+        .btn {
+            text-decoration: none;
+        }
+
+        .leftSection .btn {
+
+            padding: 11px;
+            background: #ff7b00d1;
+            color: white;
+            border: 2px solid white;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+        .rightSection {
+            width: 80px;
+            margin: 50px;
+        }
+
+        .rightSection img {
+            width: 350px;
+            height: 350px
+        }
+
+        .dark {
+            color: #ff7d00;
+        }
+
+        .text-grey {
+            color: #b1550095;
+        }
+
+        #element {
+            color: #ff7d00;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 70vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.4rem;
+        }
+
+        .secondSection .box {
+            background: #1a759f;
+            width: 115vh;
+            height: 3px;
+            margin: 56px 0;
+            display: flex;
+
+        }
+
+        .secondSection .vertical {
+            height: 80px;
+            width: 1.8px;
+            background-color: #1a759f;
+            margin: 0 100px;
+        }
+
+        main hr {
+            border: 0;
+            background-color: #ff7d00;
+            height: 2px;
+            margin: 40px 84px;
+
+        }
+
+        hr {
+            border: 0;
+            background-color: #ff7d00;
+            height: 2px;
+            margin: 40px 84px;
+        }
+
+        .image-top {
+            width: 29px;
+            position: relative;
+            top: -23px;
+            left: -17px;
+        }
+
+        .image-top2 {
+            height: 20px;
+            position: relative;
+            top: -26px;
+            left: -9px
+        }
+
+        .image-top3 {
+            position: relative;
+            width: 25px;
+            top: -30px;
+            left: -11px
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 53px;
+            left: -1px;
+            color: #ff7b00d1;
+            font-size: 15px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 60px;
+            left: -2px;
+            width: 150px;
+            font-size: 8px;
+            color: #deab7bab;
+        }
+
+        footer {
+            background-color: #0D1B2A;
+
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 120px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .text-center {
+            text-align: center;
+            color: #deab7bab;
+            margin: 20px;
+            padding: 12px;
+
+        }
+
+
+        .skill h3 {
+            margin: 0 80px;
+            padding: 14px;
+            position: relative;
+            top: -18px;
+            right: 0;
+            color: #ff7b00d1;
+            text-decoration: underline;
+        }
+
+        .skill-list ul {
+            position: relative;
+            top: -7px;
+            left: 100px;
+            color: #deab7bab;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><a href="">Sandeep PHP developer</a></div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Contact Me!</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hii, My Name Is <span class="dark">Sandeep Sharma</span>
+                <div>and I am a passionate </div>
+                <div><b>PHP developer</b></div>
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn"><a href="sandeep.pdf" download
+                            style="text-decoration: none;color: #E0E1DD;">Download Resume</a> </button>
+                    <button class="btn"><a href="https://github.com/sandeeps12"
+                            style="text-decoration: none;color: #E0E1DD;">Visit GitHub </a></button>
+                </div>
+            </div>
+
+            <div class="rightSection">
+                <img src="sandeep.jpg" alt="Error in loading photo">
+            </div>
+
+        </section>
+
+        <hr>
+        <div class="skill">
+            <h3>My Skills a a fresher</h3>
+        </div>
+        <div class="skill-list">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>PHP</li>
+                <li>MYSql</li>
+                <li>JAVASCRIPT</li>
+
+            </ul>
+        </div>
+
+        <hr>
+        <section class="secondSection">
+            <span class="text-grey">What i have done </span>
+            <h1>Past Project</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="project1.png" alt="Image loading">
+                    <div class="vertical-title">Library Management System</div>
+                    <div class="vertical-desc">
+                        -> User or Student Login Page
+                        New User or Student Registration
+                        Search Available Books
+                        View Issued Book Data
+                        Manage Profile
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top2" src="project2.png" alt="Image loading">
+                    <div class="vertical-title">Android Expense Tracker</div>
+                    <div class="vertical-desc">
+                        -> keeps records of daily expenses
+                        Dashboard: In this section, user can briefly view expenses on a daily basis, monthly basis, and
+                        yearly basis. Expenses: In this section user can manage the expenses (add/delete).
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top3" src="project3.png" alt="Image loading">
+                    <div class="vertical-title">Mera Resume</div>
+                    <div class="vertical-desc">
+                        ->Static portfolio website using HTML, CSS and typed.js
+                        download my resume using this portfolio i will upload it on netlify.
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <hr>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Sandeep Sharma Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
+                </ul>
+            </div>
+            <div class="footer third">
+                <ul>
+                    <li>Freelancing</li>
+                    <li>Php Development</li>
+                    <li>Frontend</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>free Revision of code</li>
+                    <li>Html</li>
+                    <li>css</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center">welcome to my Portfolio copyright&copy; | All rights Reserved</div>
+
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['HTML.', 'CSS..', 'PHP...', 'MySql....'],
+            typeSpeed: 200,
+        });
+    </script>
+</body>
+
+</html>
